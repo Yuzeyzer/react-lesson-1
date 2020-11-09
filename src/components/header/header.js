@@ -1,5 +1,8 @@
-import search from '../assets/search.svg';
-import phone from '../assets/phone.svg';
+import search from '../../assets/search.svg';
+import phone from '../../assets/phone.svg';
+import cart from '../../assets/cart.svg';
+import user from '../../assets/user.svg';
+import './styles.scss';
 
 const Header = () => {
   return (
@@ -7,25 +10,29 @@ const Header = () => {
       <div className='container'>
         <div className='header__top'>
           <div>
-            <img src={phone} alt='phone' />
+            <img className="header__phone" src={phone} alt='phone' />
             <img src={search} alt='search' />
           </div>
-					<div className="header__logo">
-						<a href="" className="logo__link">
-							Shoply
-						</a>
-					</div>
+          <div className='header__logo'>
+            <a href='' className='logo__link'>
+              Shoply
+            </a>
+          </div>
+          <div>
+            <img className="header__cart" src={cart} alt='cart' />
+            <img src={user} alt='user' />
+          </div>
         </div>
         <div className='header__bottom'>
           <nav className='header__nav nav'>
             <ul className='nav__menu'>
               <li className='nav__item'>
-                <a href='' className='nav__link'>
+                <a href='#hero' className='nav__link'>
                   Home
                 </a>
               </li>
               <li className='nav__item'>
-                <a href='' className='nav__link'>
+                <a href='#ajara' className='nav__link'>
                   New In
                 </a>
               </li>
