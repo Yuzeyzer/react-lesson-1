@@ -38,19 +38,80 @@
 	}
 	&__btn {
 		@include font($font-baby, 18px, 700);
+		position: relative;
 		align-self: flex-start;
 		margin-top: 30px;
 		background-color: $color-green;
-		padding: 20px 30px;
+		padding: 20px 50px 20px 30px;
 		color: $color-white;
 		letter-spacing: 9px;
-		line-height: 26px;
 		border: 2px solid transparent;
 		transition: 0.3s;
+		&::before {
+			content: "";
+			position: absolute;
+			right: 10%;
+			top: 50%;
+			width: 0;
+			height: 0;
+			border-top: 6px solid transparent;
+			border-left: 12px solid $color-white;
+			border-bottom: 6px solid transparent;
+			transform: translateY(-50%);
+			transition: 0.3s;
+		}
 		&:hover {
 			border-color: $color-green;
 			background-color: $color-white;
 			color: $color-green;
+			&::before {
+				border-left: 12px solid $color-green;
+			}
+		}
+	}
+
+	&__shampoo {
+		position: absolute;
+		left: 50%;
+		max-width: 300px;
+	}
+
+	&__leafs {
+		position: relative;
+		li {
+			max-width: 25vw;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	&__leaf {
+		position: absolute;
+	}
+	.leaf {
+		&--1 {
+			bottom: -320px;
+			right: 0;
+		}
+		&--2 {
+			bottom: -520px;
+			left: -100px;
+		}
+		&--3 {
+			bottom: -520px;
+			left: -100px;
+		}
+		&--4 {
+			bottom: -520px;
+			left: -100px;
+		}
+		&--5 {
+			bottom: -520px;
+			left: 420px;
+		}
+		&--6 {
+			bottom: -220px;
+			left: 185px;
 		}
 	}
 }
