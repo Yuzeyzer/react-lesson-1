@@ -1,0 +1,56 @@
+@import "../global";
+.hero {
+	background: url("../../assets/hero-bg.png") center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	&__content {
+		padding-top: 100px;
+		padding-left: 30px;
+	}
+	&__product {
+		display: flex;
+		flex-direction: column;
+		padding: 100px 50px 60px 30px;
+		max-width: 400px;
+		background-color: $color-white;
+	}
+	&__title {
+		@include font($font-baby, 66px, 700);
+		line-height: 62px;
+		color: $color-green;
+	}
+	&__suptitle {
+		@include font($font-baby, 26px, 700);
+		line-height: 28px;
+		color: $color-darkGreen;
+	}
+	&__description {
+		@include font($font-steel, 24px);
+		margin: 20px 0;
+		letter-spacing: 2px;
+		line-height: 31px;
+		color: $color-gray;
+	}
+	&__price {
+		@include font($font-steel, 46px);
+		letter-spacing: 1px;
+		color: $color-darkGreen;
+	}
+	&__btn {
+		@include font($font-baby, 18px, 700);
+		align-self: flex-start;
+		margin-top: 30px;
+		background-color: $color-green;
+		padding: 20px 30px;
+		color: $color-white;
+		letter-spacing: 9px;
+		line-height: 26px;
+		border: 2px solid transparent;
+		transition: 0.3s;
+		&:hover {
+			border-color: $color-green;
+			background-color: $color-white;
+			color: $color-green;
+		}
+	}
+}
