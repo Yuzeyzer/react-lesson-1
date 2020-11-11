@@ -6,6 +6,7 @@ import leaf3 from '../../assets/leaf-3.png';
 import leaf4 from '../../assets/leaf-4.png';
 import leaf5 from '../../assets/leaf-5.png';
 import leaf6 from '../../assets/leaf-6.png';
+import natural from '../../assets/natural.png';
 
 const Hero = () => {
   return (
@@ -33,14 +34,15 @@ const Hero = () => {
               <img src={leaf6} alt='' />
             </li>
           </ul>
+          <img src={natural} alt="" className="hero__natural"/>
           <div className='hero__product'>
-            <h1 className='hero__title'>Tresemme Conditioner</h1>
+            <h1 className='hero__title title'>Tresemme Conditioner</h1>
             <h3 className='hero__suptitle'>Naturals Nourishing Moisture 740 ml</h3>
             <p className='hero__description'>
               leafs hair looking shinier and feeling 10X stronger after just one use.
             </p>
             <span className='hero__price'>US$ 124.0</span>
-            <a href='' className='hero__btn'>
+            <a href='' className='hero__btn btn'>
               Shop Now
             </a>
           </div>

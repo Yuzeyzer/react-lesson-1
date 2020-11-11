@@ -1,0 +1,7 @@
+@function vh($value, $viewport: 1024) {
+	@return $value / $viewport * 100vh;
+}
+
+@function vw($value, $viewport: 1400) {
+	@return $value / $viewport * 100vw;
+}

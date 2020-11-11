@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+@import "./components/global";
 body {
 	margin: 0;
 }
 .container {
-	max-width: 1230px;
+	max-width: vw(1230);
 	margin: 0 auto;
 }
 
@@ -26,4 +26,61 @@ p {
 }
 ul {
 	padding: 0;
+}
+
+.btn {
+	@include font($font-baby, vh(18), 700);
+	position: relative;
+	align-self: flex-start;
+	background-color: $color-green;
+	padding: vh(20) vh(50) vh(20) vh(30);
+	color: $color-white;
+	letter-spacing: 9px;
+	border: 2px solid transparent;
+	transition: 0.3s;
+	&::before {
+		content: "";
+		position: absolute;
+		right: 10%;
+		top: 50%;
+		width: 0;
+		height: 0;
+		border-top: vh(6) solid transparent;
+		border-left: vh(12) solid $color-white;
+		border-bottom: vh(6) solid transparent;
+		transform: translateY(-50%);
+		transition: 0.3s;
+	}
+	&:hover {
+		border-color: $color-green;
+		background-color: $color-white;
+		color: $color-green;
+		&::before {
+			border-left: vh(12) solid $color-green;
+		}
+	}
+}
+
+.col-6{
+	width: 50%;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.title{
+	@include font($font-baby, vh(66), 700);
+	line-height: vh(62);
+	color: $color-green;
+}
+.subtitle{
+	@include font($font-baby, vh(26), 700);
+	line-height: vh(28);
+	color: $color-darkGreen;
+}
+.description{
+	@include font($font-steel, vh(24));
+	letter-spacing: 2px;
+	line-height: vh(31);
+	color: $color-gray;
 }

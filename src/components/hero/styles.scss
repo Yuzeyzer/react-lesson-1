@@ -1,87 +1,61 @@
 @import "../global";
 .hero {
-	background: url("../../assets/hero-bg.png") center no-repeat;
+	background: url("../../assets/hero-bg.png") no-repeat;
+	background-position: center;
 	background-size: cover;
-	min-height: 100vh;
+	height: 84vh;
 	&__content {
-		padding-top: 100px;
-		padding-left: 30px;
+		padding-top: vh(100);
+		padding-left: vw(100);
 	}
 	&__product {
 		display: flex;
 		flex-direction: column;
-		padding: 100px 50px 60px 30px;
-		max-width: 400px;
+		padding: vh(100) vh(50) vh(60) vh(30);
+		max-width: vh(400);
 		background-color: $color-white;
 	}
 	&__title {
-		@include font($font-baby, 66px, 700);
-		line-height: 62px;
+		@include font($font-baby, vh(66), 700);
+		line-height: vh(62);
 		color: $color-green;
 	}
 	&__suptitle {
-		@include font($font-baby, 26px, 700);
-		line-height: 28px;
+		@include font($font-baby, vh(26), 700);
+		line-height: vh(28);
 		color: $color-darkGreen;
 	}
 	&__description {
-		@include font($font-steel, 24px);
-		margin: 20px 0;
+		@include font($font-steel, vh(24));
+		margin: vh(20) 0;
 		letter-spacing: 2px;
-		line-height: 31px;
+		line-height: vh(31);
 		color: $color-gray;
 	}
 	&__price {
-		@include font($font-steel, 46px);
+		@include font($font-steel, vh(46));
 		letter-spacing: 1px;
 		color: $color-darkGreen;
 	}
 	&__btn {
-		@include font($font-baby, 18px, 700);
-		position: relative;
-		align-self: flex-start;
-		margin-top: 30px;
-		background-color: $color-green;
-		padding: 20px 50px 20px 30px;
-		color: $color-white;
-		letter-spacing: 9px;
-		border: 2px solid transparent;
-		transition: 0.3s;
-		&::before {
-			content: "";
-			position: absolute;
-			right: 10%;
-			top: 50%;
-			width: 0;
-			height: 0;
-			border-top: 6px solid transparent;
-			border-left: 12px solid $color-white;
-			border-bottom: 6px solid transparent;
-			transform: translateY(-50%);
-			transition: 0.3s;
-		}
-		&:hover {
-			border-color: $color-green;
-			background-color: $color-white;
-			color: $color-green;
-			&::before {
-				border-left: 12px solid $color-green;
-			}
-		}
+		margin-top: vh(30);
 	}
 
 	&__shampoo {
 		position: absolute;
+		top: vh(320);
 		left: 50%;
-		max-width: 300px;
+		max-width: vh(400);
+		transform: translateX(-50%);
+		height: vh(700);
 	}
 
 	&__leafs {
 		position: relative;
 		li {
-			max-width: 25vw;
+			width: vh(250);
 			img {
-				max-width: 100%;
+				width: 100%;
 			}
 		}
 	}
@@ -90,28 +64,34 @@
 	}
 	.leaf {
 		&--1 {
-			bottom: -320px;
+			bottom: vh(-320);
 			right: 0;
 		}
 		&--2 {
-			bottom: -520px;
-			left: -100px;
+			bottom: vh(-520);
+			left: vh(-100);
 		}
 		&--3 {
-			bottom: -520px;
-			left: -100px;
+			bottom: vh(-520);
+			left: vh(-100);
 		}
 		&--4 {
-			bottom: -520px;
-			left: -100px;
+			bottom: vh(-520);
+			left: vh(-100);
 		}
 		&--5 {
-			bottom: -520px;
-			left: 420px;
+			bottom: vh(-520);
+			left: vh(420);
 		}
 		&--6 {
-			bottom: -220px;
-			left: 185px;
+			bottom: vh(-220);
+			left: vh(185);
 		}
+	}
+	&__natural {
+		position: absolute;
+		right: vw(100);
+		top: vw(100);
+		width: vw(500);
 	}
 }
