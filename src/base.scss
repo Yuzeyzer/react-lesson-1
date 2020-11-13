@@ -61,26 +61,34 @@ ul {
 	}
 }
 
-.col-6{
+.col-6 {
 	width: 50%;
 }
-.row{
+.row {
 	display: flex;
 	flex-wrap: wrap;
 }
-.title{
+.title {
 	@include font($font-baby, vh(66), 700);
 	line-height: vh(62);
 	color: $color-green;
 }
-.subtitle{
+.subtitle {
 	@include font($font-baby, vh(26), 700);
 	line-height: vh(28);
 	color: $color-darkGreen;
 }
-.description{
+.description {
 	@include font($font-steel, vh(24));
 	letter-spacing: 2px;
 	line-height: vh(31);
 	color: $color-gray;
+}
+
+img {
+	max-width: 100%;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
