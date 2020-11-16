@@ -1,0 +1,44 @@
+@import '../global';
+
+.subscribe {
+	&__content {
+		margin: 0 100px;
+	}
+	&__title {
+		padding-top: 120px;
+		max-width: 370px;
+	}
+	&__description {
+		padding: 30px 0 50px 0;
+		max-width: 295px;
+	}
+	&__input {
+		box-sizing: border-box;
+		padding: 0 10px;
+		width: 401px;
+		height: 56px;
+		background-color: #ffffff;
+		border: 1px solid #408b04;
+		outline: none;
+		&::placeholder {
+			font-size: 19px;
+			letter-spacing: 9px;
+			line-height: 26px;
+			color: #808080;
+			font-family: "Bebas Neue";
+		}
+	}
+	&__item {
+		position: relative;
+	}
+	&__atabek {
+		margin-top: 50px;
+		width: 500px;
+		height: 532px;
+	}
+	&__leaf {
+		position: absolute;
+		bottom: -15px;
+		left: -50px;
+	}
+}

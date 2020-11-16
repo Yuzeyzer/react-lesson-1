@@ -1,0 +1,17 @@
+@import '../global';
+
+.footer{
+	&__block{
+		display: flex;
+	}
+  &__awto{
+		background-color: #408b04;
+		text-align: center;
+	}
+	&__exile{
+
+	 &__title{
+		color: #408b04;
+	 }
+	}
+}
