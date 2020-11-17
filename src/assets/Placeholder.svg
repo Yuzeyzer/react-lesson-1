@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #a8acb9 } 
+	</style>
+	<g id="Footer 2">
+		<g id="Instagram">
+			<g id="Photo 1">
+				<path id="Placeholder" class="shp0" d="M5 0L65 0C67.76 0 70 2.24 70 5L70 65C70 67.76 67.76 70 65 70L5 70C2.24 70 0 67.76 0 65L0 5C0 2.24 2.24 0 5 0Z" />
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import search from '../../assets/search.svg';
 import phone from '../../assets/phone.svg';

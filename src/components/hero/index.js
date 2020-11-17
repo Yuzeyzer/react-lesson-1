@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles.scss';
 import shampoo from '../../assets/shampoon.png';
 import leaf1 from '../../assets/leaf-1.png';

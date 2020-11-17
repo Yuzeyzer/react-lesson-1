@@ -1,17 +1,91 @@
-@import '../global';
+@import "../global";
 
-.footer{
-	&__block{
+.footer {
+	margin-top: 100px;
+	&__block {
 		display: flex;
+		flex-wrap: wrap;
 	}
-  &__awto{
+	&__awto {
 		background-color: #408b04;
 		text-align: center;
+		height: 80px;
+		margin-top: 60px;
 	}
-	&__exile{
-
-	 &__title{
-		color: #408b04;
-	 }
+	&__exile {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		&__nav {
+			max-width: 210px;
+		}
+		&__link {
+			font-size: 14px;
+			letter-spacing: 1px;
+			color: #132f02;
+			font-weight: 400;
+			font-family: "Bebas Neue";
+			margin-top: 15px;
+		}
+		&__title {
+			letter-spacing: 3px;
+			color: #408b04;
+			font-weight: 700;
+			font-family: "Bebas Neue";
+		}
+		&__nav {
+			margin-left: 80px;
+		}
+	}
+	&__social {
+		max-width: 300px;
+		margin: auto;
+		margin-left: 80px;
+		margin-top: 30px;
+		&__images {
+			margin-top: 20px;
+			max-width: 300px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__posts {
+			border-radius: 5px;
+			width: 70px;
+			max-height: 70px;
+			margin-bottom: 15px;
+		}
+		&__item {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-right: 15px;
+			max-width: 30px;
+			max-height: 20px;
+		}
+		&__title {
+			font-size: 16px;
+			letter-spacing: 3px;
+			color: #408b04;
+			font-weight: 700;
+			font-family: "Bebas Neue";
+		}
+	}
+	&__abdula {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 28px;
+		color: #ffffff;
+		font-weight: 700;
+		font-family: "Bebas Neue";
+		text-align: center;
+	}
+	&__design {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 28px;
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Bebas Neue";
+		text-align: center;
+		padding-top: 30px;
 	}
 }
