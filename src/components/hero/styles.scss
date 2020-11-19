@@ -40,7 +40,6 @@
 	&__btn {
 		margin-top: vh(30);
 	}
-
 	&__shampoo {
 		position: absolute;
 		top: vh(320);
@@ -48,8 +47,8 @@
 		max-width: vh(400);
 		transform: translateX(-50%);
 		height: vh(700);
+		animation: floatShampoo 3s infinite ease-in-out;
 	}
-
 	&__leafs {
 		position: relative;
 		li {
@@ -93,5 +92,28 @@
 		right: vw(100);
 		top: vw(100);
 		width: vw(500);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.hero {
+		&__content {
+			padding-top: 100vh;
+		}
+		&__natural {
+			display: none;
+		}
+	}
+}
+
+@keyframes floatShampoo {
+	from {
+		transform: translateX(-50%) translateY(-20px);
+	}
+	50% {
+		transform: translateX(-50%) translateY(0);
+	}
+	to {
+		transform: translateX(-50%) translateY(-20px);
 	}
 }

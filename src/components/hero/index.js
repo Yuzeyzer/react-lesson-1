@@ -10,6 +10,7 @@ import leaf6 from '../../assets/leaf-6.png';
 import natural from '../../assets/natural.png';
 
 const Hero = () => {
+
   return (
     <section className='hero'>
       <div className='container'>

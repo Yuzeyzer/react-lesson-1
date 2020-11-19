@@ -60,8 +60,17 @@ ul {
 		}
 	}
 }
-.col-4{
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
 	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
 }
 .col-6 {
 	width: 50%;
@@ -93,4 +102,22 @@ img {
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+@media screen and (max-width: 576px) {
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 100%;
+	}
 }

@@ -10,7 +10,7 @@ import './base.scss';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='App' data-barba="container">
       <Header />
       {/* <Header />
       <Hero />

@@ -67,3 +67,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.header {
+		&__bottom {
+			display: none;
+		}
+	}
+}

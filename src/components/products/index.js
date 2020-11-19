@@ -3,11 +3,17 @@ import ProductItem from './productItem';
 import { obj } from './backend';
 
 const Products = () => {
+  const array = ['hatam', 'ajara', 'aiza', 'zhumadil'];
+  const arr = array.map((item, index) => {
+    return array[item][0].toUpperCase();
+  })
+
+  console.log(arr);
   return (
     <section className='products'>
       <div className='container'>
         <div className='products__row row'>
-          {obj.map((item) => {
+          {obj.forEach((item) => {
             return (
               <ProductItem
                 boolean={item.bool}
@@ -16,6 +22,7 @@ const Products = () => {
                 description={item.description}
                 img={item.img}
               />
+              
             );
           })}
         </div>

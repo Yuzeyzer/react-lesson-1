@@ -2,6 +2,10 @@
 
 .footer {
 	margin-top: 100px;
+	&__container {
+		max-width: 970px;
+		margin: 0 auto;
+	}
 	&__block {
 		display: flex;
 		flex-wrap: wrap;
@@ -87,5 +91,17 @@
 		font-family: "Bebas Neue";
 		text-align: center;
 		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer {
+		text-align: center;
+		&__container {
+			padding: 0 40px;
+		}
+		&__social__images {
+			justify-content: space-between;
+		}
 	}
 }
